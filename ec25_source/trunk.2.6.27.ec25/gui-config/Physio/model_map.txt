@@ -1,0 +1,28 @@
+mask=0x2007
+; The above line must always be the first line in this file
+; Lines that start with ; or are blank will be skipped
+; Element lines have format of key,<model_number> where key is
+; made up of the device hwoption flags masked with the mask element from
+; first line of this file followed by '-' char and then the cell type index
+; retrieved from /tmp/cell_type file
+; cell type 1 = PXS8 (3G),  2= PLS8 (4G), 3 = Other 4G, 4 = Other 4G, ...
+
+; Wifi only, domestic and international
+4-0,MPC15301-100-00
+2004-0,MPC15301-150-00
+
+; Wifi + Cellular Combo domestic and international
+6-1,MPC15300-300-00
+6-2,MPC15331-300-00
+2006-1,MPC15300-350-00
+2006-2,MPC15331-350
+
+; Wifi + Cellular + Audio Trio
+7-1,MPC15300-400-00
+7-2,MPC15331-400-00
+7-5,MPC15244-400
+2007-1,MPC15300-450-00
+2007-2,MPC15331-450-00
+2007-3,MPC15335-450
+2007-6,MPC15335-450 
+
